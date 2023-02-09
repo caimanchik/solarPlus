@@ -3,3 +3,4 @@
 **.code-workspace
 /gulp
 **.DS_Store
+**/gulpfile.js

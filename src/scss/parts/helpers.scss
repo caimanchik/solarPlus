@@ -1,0 +1,72 @@
+.big-text {
+    font-size: 1.29rem;
+}
+.big-title {
+    font-weight: bold;
+    font-size: 4.57rem;
+    padding: 0 1rem;
+    @media (max-width: $md2) {
+        font-size: 4rem;
+    }
+    
+    @media(max-width:$md3){
+        font-size: 3rem;
+    }
+}
+.descriptor {
+    font-size: 3rem;
+    @media(max-width:$md3){
+        font-size: 2rem;
+    }
+}
+.button {
+    &__text {
+        position: relative;
+        z-index: 3;
+        color: white;
+    }
+    &__wrap {
+        display: inline-block;
+        position: relative;
+        margin-left: 50px;
+
+        &:hover, &:focus {
+            .decor {
+                background-color: $yellow;
+            }
+        }
+    }
+    &__decor {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.decor {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transform: translate(-50%, -62%);
+    z-index: 2;
+    transition: all ease 0.3s;
+
+    @media (max-width: $md3) {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+
+        & img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -45%);
+        }
+    }
+}
