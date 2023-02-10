@@ -1,0 +1,142 @@
+.footer {
+    padding: 5rem 0 3.57rem;
+    background: url(../img/footer/bg.jpg) center/cover no-repeat;
+    
+    &__columns {
+        display: flex;
+        
+        @media(max-width:620px){
+            display: block;
+        }
+    }
+    &__column {
+        flex: 0 0 50%;
+        
+        &:first-child {
+            padding-right: 6.43rem;
+        }
+        
+        &:last-child {
+            @media(max-width:620px) {
+                margin-top: 6rem;
+            }
+        }
+    }
+    &__form {
+    }
+    
+    &__item {
+        margin-right: 1rem;
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        @media(max-width:610px){
+            flex: 0 0 50%;
+            text-align: center;
+            margin-right: 0;
+        }
+        
+        @media(max-width:430px){
+            flex: 0 0 100%;
+        }
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__title {
+        color: white;
+    }
+    &__button {
+        margin-top: 8rem;
+    }
+    &__contact {
+    }
+    &__footer {
+        margin-top: 10.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @media(max-width:610px) {
+            justify-content: center;
+        }
+    }
+    &__politics {
+        color: white;
+        transition: all ease .3s;
+        
+        &:hover {
+            color: $yellow;
+        }
+    }
+    &__logo {
+        width: 182px;
+        height: 50px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        @media(max-width:430px) {
+            margin-top: 1rem;
+        }
+    }
+    &__links {
+        @media(max-width:610px) {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.footer-form {
+    &__field {
+        margin-top: 4.29rem;
+    }
+    &__input {
+        padding: 0.8rem 0;
+        background-color: transparent;
+        width: 100%;
+        color: white;
+        border-bottom: 1px solid white;
+        transition: all ease .3s;
+        
+        &::placeholder {
+            opacity: 1;
+        }
+        
+        &:focus {
+            border-color: $yellow;
+        }
+    }
+}
+
+.footer-contact {
+    margin-top: 4.29rem;
+    
+    &__item {
+        margin-top: 2.14rem;
+        
+        &:first-child {
+            margin-top: 0;
+        }
+        
+        color: white;
+        & a {
+            display: inline-block;
+            color: white;
+            transition: all ease .3s;
+            
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+    &__text {
+        line-height: 1.4em;
+    }
+}

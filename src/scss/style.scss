@@ -30,8 +30,7 @@ html{
 
 body{
 	font-family: $fontfamily;
-	color: #F1F1F1;
-    background-color: #2d2d2d;
+	color: $dark;
 	&.lock{
 		overflow: hidden;
 	}
@@ -51,3 +50,9 @@ body{
 //* parts of scss
 
 @import 'parts/start.scss';
+@import 'parts/info.scss';
+@import 'parts/green.scss';
+@import 'parts/invest.scss';
+@import 'parts/clients.scss';
+@import 'parts/steps.scss';
+@import 'parts/footer.scss';

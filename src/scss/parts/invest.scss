@@ -1,0 +1,28 @@
+.invest {
+    height: 500px;
+    width: 100vw;
+    background: url(../img/delimeter/image.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @media(max-width:$md3){
+        height: 400px;
+    }
+
+    &__text {
+        padding: 1rem;
+        position: relative;
+        width: 48.2rem;
+        line-height: 1.35em;
+        
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        
+        @media(max-width:$md4){
+            font-size: 2.3rem;
+        }
+    }
+}
